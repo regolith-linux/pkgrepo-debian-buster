@@ -38,5 +38,6 @@ jobs:
       
       - name: Publish Repo
         run: | 
-          git commit -am repo/*
+          git add repo/*
+          git commit -m "Automated repo update"
           git push origin
