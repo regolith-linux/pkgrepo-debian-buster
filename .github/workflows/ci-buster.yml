@@ -33,13 +33,13 @@ jobs:
         run: |
           export DEBEMAIL="regolith.linux@gmail.com"
           export DEBFULLNAME="Regolith Linux"
-          ./build-deb-repo.sh package-model-R2.0.json ./repo /tmp/reprepro buster
+          ./build-deb-repo.sh package-model-R2.0.json ./docs /tmp/reprepro buster
 
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add repo/*
+          git add docs/*
           git commit -am "Automated repo update"
       - name: Push changes
         uses: ad-m/github-push-action@master
