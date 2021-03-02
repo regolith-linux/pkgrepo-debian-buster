@@ -1,0 +1,28 @@
+Origin: regolith-linux.github.io/debian-repo
+Label: Regolith Desktop Environment
+Codename: buster
+Date: Tue, 02 Mar 2021 20:16:49 UTC
+Architectures: amd64
+Components: main
+Description: Regolith Debian
+MD5Sum:
+ 34b81ea095a7a200454f70f39953dcb4 55407 main/binary-amd64/Packages
+ e7b9eb9aa880daca975ead74630818bf 13883 main/binary-amd64/Packages.gz
+ 24426c179a02523ccc7ad40c41728c42 146 main/binary-amd64/Release
+ 87fda257b757a5869eca87e4da08c123 42601 main/source/Sources
+ ca685afff97c63f206a0a120981198a7 10997 main/source/Sources.gz
+ 14169105804d1d8322f0da4dcd6c950d 147 main/source/Release
+SHA1:
+ 4a24a09fc6acffc04037427e9870a1aa8e0a0477 55407 main/binary-amd64/Packages
+ c3ffae60bf35b909b2889d9dc19797498ff6f4d9 13883 main/binary-amd64/Packages.gz
+ 1f17a2ec8757332465ed3e45d9852fab4f799c42 146 main/binary-amd64/Release
+ 52ef23c5a95d9c96623489cd096bf6e880692230 42601 main/source/Sources
+ 29b13b3716d4c6affb2535d14459fef598683fa5 10997 main/source/Sources.gz
+ 485935e402659aa206b7dd83babd8dc209355ce4 147 main/source/Release
+SHA256:
+ 30e932e0dda051f9d2b9b76ff972941d8333f357d3c491fedbab192d059d24f0 55407 main/binary-amd64/Packages
+ 54ca1a626aab29d01d8d46527066ef46ce3f825c632814c531b46b2191224eef 13883 main/binary-amd64/Packages.gz
+ aa731a923106a7bf69b21d885e4208dc0c204fb8614673a8262ede81fdfd0a66 146 main/binary-amd64/Release
+ 69aacda5ad8a0a305569552c6d50e44866b02d2195eb4043a0820dc987253825 42601 main/source/Sources
+ 4b99f5c95d422b3cdff4a579755e5621342d4fd8c58bd38d832f64e6bbdb2b9a 10997 main/source/Sources.gz
+ 7c45f47ac33b300e6da9a54cdd584d710dc45e6dc33e1554ea8becde9c715f9a 147 main/source/Release
