@@ -1,3 +1,18 @@
+Package: ayu-theme
+Version: 0.2.0-1ubuntu1~ppa1-1regolith-1614750516
+Architecture: amd64
+Maintainer: Regolith Linux <regolith.linux@gmail.com>
+Installed-Size: 10305
+Homepage: https://github.com/appelgriebsch/ayu-theme
+Priority: extra
+Section: x11
+Filename: pool/main/a/ayu-theme/ayu-theme_0.2.0-1ubuntu1~ppa1-1regolith-1614750516_amd64.deb
+Size: 310988
+SHA256: 4560b2436f0c8fdf315d845b0f87ba20bfd18621b6d6fca15f97f8429a8a1586
+SHA1: 885bb1817e5a8bbbe8acede933a7ef1befdc0dc5
+MD5sum: 9897d7d83a0d140b1c30ff3b8f6729a4
+Description: Ayu Themes for GNOME 3.22
+
 Package: fonts-jetbrains-mono
 Version: 1.0.1-1regolith1-1regolith-1614715823
 Architecture: all
