@@ -11,15 +11,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Job Parameters
-        run: |
-          echo "::set-env name=PKG_MODEL_FILE::package-model-R2.0"          
-          echo "::set-env name=DIST_CODENAME::buster"
           
       - name: Generate Manifest
         run: |
           [ -e ./manifest.txt ] && rm ./manifest.txt
-          ./build-manifest.sh $PKG_MODEL_FILE ./manifest.txt /tmp/reprepro              
+          ./build-manifest.sh ./package-model-R2.0.json ./manifest.txt /tmp/reprepro              
       
       - name: Check if there are changes
         id: changes
@@ -43,7 +39,7 @@ jobs:
         run: |
           export DEBEMAIL="regolith.linux@gmail.com"
           export DEBFULLNAME="Regolith Linux"
-          ./build-deb-repo.sh $PKG_MODEL_FILE ./docs /tmp/reprepro $DIST_CODENAME
+          ./build-deb-repo.sh package-model-R2.0.json ./docs /tmp/reprepro buster
 
       - name: Commit files
         if: steps.changes.outputs.changed == 1
