@@ -5,22 +5,32 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-20.04
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: Job Parameters
+        run: |
+          export PKG_MODEL_FILE=package-model-R2.0
+          export DIST_CODENAME=buster
+          
+      - name: Generate Manifest
+        run: |
+          rm ./manifest.txt
+          ./build-manifest.sh $PKG_MODEL_FILE ./manifest.txt /tmp/reprepro              
+      
+      - name: Check if there are changes
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
       
       - name: Setup
+        if: steps.changes.outputs.changed == 1
         run: ./init.sh
           
       - name: Configure GPG Key
+        if: steps.changes.outputs.changed == 1
         run: |
           mkdir -p ~/.gnupg/
           printf "$GPG_SIGNING_KEY" | base64 --decode > ~/.gnupg/private.key
@@ -28,20 +38,23 @@ jobs:
         env:
           GPG_SIGNING_KEY: ${{ secrets.DEB_REPO_KEY }}
 
-      # Runs a single command using the runners shell
       - name: Generate Package Repository
+        if: steps.changes.outputs.changed == 1
         run: |
           export DEBEMAIL="regolith.linux@gmail.com"
           export DEBFULLNAME="Regolith Linux"
-          ./build-deb-repo.sh package-model-R2.0.json ./docs /tmp/reprepro buster
+          ./build-deb-repo.sh $PKG_MODEL_FILE ./docs /tmp/reprepro $DIST_CODENAME
 
       - name: Commit files
+        if: steps.changes.outputs.changed == 1
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs/*
           git commit -am "Automated repo update"
+          
       - name: Push changes
+        if: steps.changes.outputs.changed == 1
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
