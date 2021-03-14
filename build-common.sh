@@ -73,15 +73,3 @@ build_bin_package() {
     debuild -sa -b
     cd $BUILD_DIR
 }
-
-env_check() {
-    # Verify execution environment
-    hash git 2>/dev/null || { echo >&2 "Required command git is not found on this system. Please install it. Aborting."; exit 1; }
-    hash debuild 2>/dev/null || { echo >&2 "Required command debuild is not found on this system. Please install it. Aborting."; exit 1; }
-    hash jq 2>/dev/null || { echo >&2 "Required command jq is not found on this system. Please install it. Aborting."; exit 1; }
-    hash wget 2>/dev/null || { echo >&2 "Required command wget is not found on this system. Please install it. Aborting."; exit 1; }
-    hash dpkg-parsechangelog 2>/dev/null || { echo >&2 "Required command dpkg-parsechangelog is not found on this system. Please install it. Aborting."; exit 1; }
-    hash realpath 2>/dev/null || { echo >&2 "Required command realpath is not found on this system. Please install it. Aborting."; exit 1; }
-    hash curl 2>/dev/null || { echo >&2 "Required command curl is not found on this system. Please install it. Aborting."; exit 1; }
-    # hash copy-package 2>/dev/null || { echo >&2 "Required command copy-package is not found on this system. Please install it from http://bazaar.launchpad.net/~ubuntu-archive/ubuntu-archive-tools/trunk/files. Aborting."; exit 1; }
-}

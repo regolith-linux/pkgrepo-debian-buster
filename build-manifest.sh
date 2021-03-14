@@ -26,6 +26,11 @@ append_manifest() {
     echo "$REPO_NAME $BRANCH_NAME $COMMIT_HASH" >> "$MANIFEST_FILE"
 }
 
+# Verify execution environment
+env_check() {
+    hash git 2>/dev/null || { echo >&2 "Required command git is not found on this system. Please install it. Aborting."; exit 1; }
+}
+
 # Main
 set -e
 
