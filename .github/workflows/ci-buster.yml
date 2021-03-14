@@ -18,7 +18,7 @@ jobs:
           
       - name: Generate Manifest
         run: |
-          rm ./manifest.txt
+          [ -e ./manifest.txt ] && rm ./manifest.txt
           ./build-manifest.sh $PKG_MODEL_FILE ./manifest.txt /tmp/reprepro              
       
       - name: Check if there are changes
