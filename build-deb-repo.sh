@@ -6,7 +6,7 @@ if [ "$#" -lt 4 ]; then
     echo "This script builds Debian packages.  It uses a package model file that describes each package."
     echo "Each package is checked out of a git repo, source is downloaded, built, and then deployed to a PPA."
     echo "If no package name is specified from the model, all packages are built."
-    echo "Usage: build.sh <package model> <repo path> <temp build dir> <distribution codename> [package]"
+    echo "Usage: build-deb-repo.sh <package model> <repo path> <temp build dir> <distribution codename> [package]"
     exit 1
 fi
 
