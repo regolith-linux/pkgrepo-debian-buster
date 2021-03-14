@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Job Parameters
         run: |
-          export PKG_MODEL_FILE=package-model-R2.0
-          export DIST_CODENAME=buster
+          echo "::set-env name=PKG_MODEL_FILE::package-model-R2.0"          
+          echo "::set-env name=DIST_CODENAME::buster"
           
       - name: Generate Manifest
         run: |
