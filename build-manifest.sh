@@ -12,7 +12,7 @@ fi
 source build-common.sh
 
 PACKAGE_MODEL_FILE=$(realpath "$1")
-MANIFEST_FILE=$2
+MANIFEST_FILE=$(realpath "$2")
 BUILD_DIR=$3
 PACKAGE=$4
 
