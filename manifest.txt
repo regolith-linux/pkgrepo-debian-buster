@@ -5,9 +5,9 @@ i3-snapshot master 5135c86
 python3-i3ipc master 4d16601
 fonts-jetbrains-mono master 6fe0e76
 fonts-materialdesignicons-webfont master 72e4dfc
-i3-gaps-wm debian/buster 319f624
-regolith-i3-config master 2a184a7
-ayu-theme master 624fed0
+i3-gaps-wm debian/buster 319f6247
+regolith-i3-config master 02f3932
+ayu-theme master ac812de
 regolith-look-minimal master eefc5fd
 i3-next-workspace main cb469ba
 i3xrocks master 0c39c51
@@ -17,10 +17,10 @@ regolith-ftue i3cp fc3e9ac
 regolith-compositor-none master 2391653
 regolith-compositor-xcompmgr master c17985c
 regolith-compositor-compton-glx master eebe813
-regolith-compositor-picom-glx master d80e083
-remontoire master 57eb312
+regolith-compositor-picom-glx master 9fe5b87
+remontoire master 82a5613
 regolith-rofi-config i3cp 80f2698
-regolith-rofication master 58918cd
+regolith-rofication master 02329b5
 regolith-default-settings i3cp 3111b48
 xrescat master 0ac61a5
 regolith-unclutter-xfixes master e4bbaba

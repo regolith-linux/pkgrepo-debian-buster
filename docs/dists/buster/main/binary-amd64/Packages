@@ -1,16 +1,16 @@
 Package: ayu-theme
-Version: 0.2.0-1ubuntu1~ppa1-1regolith-1614750516
+Version: 0.2.2-1-1regolith-1629082849
 Architecture: amd64
 Maintainer: Regolith Linux <regolith.linux@gmail.com>
 Installed-Size: 10305
 Homepage: https://github.com/appelgriebsch/ayu-theme
 Priority: extra
 Section: x11
-Filename: pool/main/a/ayu-theme/ayu-theme_0.2.0-1ubuntu1~ppa1-1regolith-1614750516_amd64.deb
-Size: 310988
-SHA256: 4560b2436f0c8fdf315d845b0f87ba20bfd18621b6d6fca15f97f8429a8a1586
-SHA1: 885bb1817e5a8bbbe8acede933a7ef1befdc0dc5
-MD5sum: 9897d7d83a0d140b1c30ff3b8f6729a4
+Filename: pool/main/a/ayu-theme/ayu-theme_0.2.2-1-1regolith-1629082849_amd64.deb
+Size: 311160
+SHA256: 35e4c143218b293848fd4a071a49386a03cf4e7a3118419bb83f860658021ba4
+SHA1: 4beb53a0168d162c42a056970bf548cd9cbeb31e
+MD5sum: 0ea0c7d00d2207289813b00de06e08d1
 Description: Ayu Themes for GNOME 3.22
 
 Package: fonts-jetbrains-mono
@@ -849,7 +849,7 @@ Description: Regolith configuration for no compositor
  script that executes nothing.
 
 Package: regolith-compositor-picom-glx
-Version: 1.1.3-1-1regolith-1614716065
+Version: 1.2.0-1-1regolith-1629083002
 Architecture: amd64
 Maintainer: Ken Gilmer <kgilmer@gmail.com>
 Installed-Size: 23
@@ -860,11 +860,11 @@ Provides: regolith-compositor
 Homepage: https://github.com/regolith-linux/regolith-desktop
 Priority: optional
 Section: x11
-Filename: pool/main/r/regolith-compositor-picom-glx/regolith-compositor-picom-glx_1.1.3-1-1regolith-1614716065_amd64.deb
-Size: 5272
-SHA256: fe5660e0856faba2f82abee79bfab1fcde629b0e27d8e127c594df8bca1468e6
-SHA1: 88beee6b527547108dcc876323c50cc3770e8960
-MD5sum: 08e5f5ed4f54bdfa02230e8e1327f9fc
+Filename: pool/main/r/regolith-compositor-picom-glx/regolith-compositor-picom-glx_1.2.0-1-1regolith-1629083002_amd64.deb
+Size: 5344
+SHA256: ccf334c493ab008cda3e339be620ff3dd3468cd0bf45f3578f727cdb4fb55778
+SHA1: 103dc353c6c5d85a26e7d715b66cfe301edd0066
+MD5sum: ebb5ac1a391c78956378daf51801e97e
 Description: Regolith configuration for picom
  Default configuration for Regolith compositor using picom compositor
  before name change, and using the glx backend.
@@ -1246,7 +1246,7 @@ Description: Regolith configuration for rofi launcher
  perhaps other utilities in the future.
 
 Package: regolith-rofication
-Version: 1.3.1-1-1regolith-1614716137
+Version: 1.3.4-1-1regolith-1629083055
 Architecture: amd64
 Maintainer: Ken Gilmer <kgilmer@gmail.com>
 Installed-Size: 53
@@ -1258,11 +1258,11 @@ Provides: notification-daemon
 Homepage: https://github.com/regolith-linux/regolith-rofication
 Priority: optional
 Section: x11
-Filename: pool/main/r/regolith-rofication/regolith-rofication_1.3.1-1-1regolith-1614716137_amd64.deb
-Size: 9976
-SHA256: 212c11164b9a74d36f81b7015f836a08e0c2b5bc4d325770cea0271b5f545508
-SHA1: 3aa65ea425c24f6b5febb2643fcf31387b9e22aa
-MD5sum: bbf5e268ab1cae1ecef3958208f84686
+Filename: pool/main/r/regolith-rofication/regolith-rofication_1.3.4-1-1regolith-1629083055_amd64.deb
+Size: 10212
+SHA256: 145174a293b22859eeb1bc601dd706a22a8f1ffc5aa3b210a777f9b646be5397
+SHA1: 834446f7d9561be60bc9baf416c17bbe8bb85488
+MD5sum: 8a5ce850cf4c6bdca76008486f69aff3
 Description: Rofication notification system
  Rofication provides an unobtrusive notification system based on a rofi frontend.
 
